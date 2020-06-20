@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="app">
       {components.map((Cp) => (
-        <Item>
+        <Item desc={Cp.desc}>
           <Cp.component key={Cp.name}></Cp.component>
         </Item>
       ))}
