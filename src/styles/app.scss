@@ -1,5 +1,6 @@
 html,
-body {
+body,
+#root {
   width: 100%;
   height: 100%;
   display: flex;
@@ -19,11 +20,15 @@ body {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.app {
-  width: 1200px;
-  height: 500px;
-  margin: auto;
+#root {
+  padding: 20px;
+  overflow: scroll;
+}
 
+.app {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
 }

@@ -1,8 +1,21 @@
+$marg: 20px;
+
 .item {
-  width: 33%;
+  width: calc(33% - 2 * #{$marg});
   height: 200px;
   border: 1px solid #fff;
   position: relative;
+
+  & + & {
+    margin-left: $marg;
+  }
+
+  &:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+  &:nth-child(n + 4) {
+    margin-top: $marg;
+  }
 
   &__desc {
     position: absolute;
